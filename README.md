@@ -46,10 +46,3 @@ Check IP address of Metallb load balancer and edit host file to match FQDN
 [metallb]: https://github.com/tixsalvador/kubernetes-metallb
 
 
-
-
-
-
-
-
-kubectl deploy -f ingress-resource.yml
