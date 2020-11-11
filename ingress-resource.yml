@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   annotations: 
     kubernetes.io/ingress.class: nginx
+    # For Path base uncomment 
+    # nginx.ingress.kubernetes.io/rewrite-target: /
   name: nginx-ingress
 spec:
   rules:
