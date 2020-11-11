@@ -1,4 +1,4 @@
-##### Setting up Nginx Ingress Controller
+# Setting up Nginx Ingress Controller
 
 Prerequisites:
 - kubernetes cluster
