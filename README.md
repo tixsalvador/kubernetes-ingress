@@ -42,7 +42,7 @@ $  kubectl apply -f https://raw.githubusercontent.com/tixsalvador/kubernetes-ing
 ```
 Check IP address of Metallb load balancer and edit host file to match FQDN
 
-Since using vagrant add Iptable rule to route port 80 traffic to the load balancer
+Since I'm using vagrant I need to  add  Iptable rules to route port 80 traffic from public to the load balancer
 ```sh
 $   sudo iptables -A PREROUTING -t nat -i eth2 -p tcp --dport 80 -j DNAT --to 10.10.10.70:80
 $   sudo iptables -A FORWARD -p tcp  -i eth2  --dport 80 -j ACCEPT
