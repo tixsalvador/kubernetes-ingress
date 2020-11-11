@@ -48,9 +48,9 @@ $   sudo iptables -A PREROUTING -t nat -i eth2 -p tcp --dport 80 -j DNAT --to 10
 $   sudo iptables -A FORWARD -p tcp  -i eth2  --dport 80 -j ACCEPT
 $   sudo iptables -A POSTROUTING -t nat -p tcp -d 10.10.10.70 --dport 80 -j SNAT --to-source 10.10.10.60
 ```
-eth2 : Public NIC
-10.10.10.70: Load Balancer IP
-10.10.10.60: Private IP
+eth2 : Public NIC  
+10.10.10.70: Load Balancer IP  
+10.10.10.60: Private IP  
 
 [metallb]: https://github.com/tixsalvador/kubernetes-metallb
 
