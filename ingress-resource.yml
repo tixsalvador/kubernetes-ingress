@@ -10,5 +10,12 @@ spec:
     http:
       paths:
       - backend: 
-          serviceName: nginx
+          serviceName: wordpress
           servicePort: 80
+  - host: ghost.salvador.org
+    http:
+     paths:
+     - backend:
+         serviceName: ghost
+         servicePort: 80
+         

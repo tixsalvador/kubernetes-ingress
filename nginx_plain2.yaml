@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wordpress
+  name: ghost
   labels:
-    app: wordpress
+    app: ghost
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: wordpress
+      app: ghost
   template:
     metadata:
       labels:
-        app: wordpress
+        app: ghost
     spec:
       containers:
       - name: nginx
